@@ -39,7 +39,7 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 20,),
+            SizedBox(height: 20),
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
