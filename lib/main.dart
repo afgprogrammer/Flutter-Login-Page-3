@@ -46,99 +46,101 @@ class HomePage extends StatelessWidget {
                   color: Colors.white,
                   borderRadius: BorderRadius.only(topLeft: Radius.circular(60), topRight: Radius.circular(60))
                 ),
-                child: Padding(
-                  padding: EdgeInsets.all(30),
-                  child: Column(
-                    children: <Widget>[
-                      SizedBox(height: 60,),
-                      FadeAnimation(1.4, Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(10),
-                          boxShadow: [BoxShadow(
-                            color: Color.fromRGBO(225, 95, 27, .3),
-                            blurRadius: 20,
-                            offset: Offset(0, 10)
-                          )]
-                        ),
-                        child: Column(
-                          children: <Widget>[
-                            Container(
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                border: Border(bottom: BorderSide(color: Colors.grey[200]))
-                              ),
-                              child: TextField(
-                                decoration: InputDecoration(
-                                  hintText: "Email or Phone number",
-                                  hintStyle: TextStyle(color: Colors.grey),
-                                  border: InputBorder.none
-                                ),
-                              ),
-                            ),
-                            Container(
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                border: Border(bottom: BorderSide(color: Colors.grey[200]))
-                              ),
-                              child: TextField(
-                                decoration: InputDecoration(
-                                  hintText: "Password",
-                                  hintStyle: TextStyle(color: Colors.grey),
-                                  border: InputBorder.none
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      )),
-                      SizedBox(height: 40,),
-                      FadeAnimation(1.5, Text("Forgot Password?", style: TextStyle(color: Colors.grey),)),
-                      SizedBox(height: 40,),
-                      FadeAnimation(1.6, Container(
-                        height: 50,
-                        margin: EdgeInsets.symmetric(horizontal: 50),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50),
-                          color: Colors.orange[900]
-                        ),
-                        child: Center(
-                          child: Text("Login", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
-                        ),
-                      )),
-                      SizedBox(height: 50,),
-                      FadeAnimation(1.7, Text("Continue with social media", style: TextStyle(color: Colors.grey),)),
-                      SizedBox(height: 30,),
-                      Row(
-                        children: <Widget>[
-                          Expanded(
-                            child: FadeAnimation(1.8, Container(
-                              height: 50,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(50),
-                                color: Colors.blue
-                              ),
-                              child: Center(
-                                child: Text("Facebook", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
-                              ),
-                            )),
+                child: SingleChildScrollView(
+                  child: Padding(
+                    padding: EdgeInsets.all(30),
+                    child: Column(
+                      children: <Widget>[
+                        SizedBox(height: 60,),
+                        FadeAnimation(1.4, Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(10),
+                            boxShadow: [BoxShadow(
+                              color: Color.fromRGBO(225, 95, 27, .3),
+                              blurRadius: 20,
+                              offset: Offset(0, 10)
+                            )]
                           ),
-                          SizedBox(width: 30,),
-                          Expanded(
-                            child: FadeAnimation(1.9, Container(
-                              height: 50,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(50),
-                                color: Colors.black
+                          child: Column(
+                            children: <Widget>[
+                              Container(
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  border: Border(bottom: BorderSide(color: Colors.grey[200]))
+                                ),
+                                child: TextField(
+                                  decoration: InputDecoration(
+                                    hintText: "Email or Phone number",
+                                    hintStyle: TextStyle(color: Colors.grey),
+                                    border: InputBorder.none
+                                  ),
+                                ),
                               ),
-                              child: Center(
-                                child: Text("Github", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
+                              Container(
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  border: Border(bottom: BorderSide(color: Colors.grey[200]))
+                                ),
+                                child: TextField(
+                                  decoration: InputDecoration(
+                                    hintText: "Password",
+                                    hintStyle: TextStyle(color: Colors.grey),
+                                    border: InputBorder.none
+                                  ),
+                                ),
                               ),
-                            )),
-                          )
-                        ],
-                      )
-                    ],
+                            ],
+                          ),
+                        )),
+                        SizedBox(height: 40,),
+                        FadeAnimation(1.5, Text("Forgot Password?", style: TextStyle(color: Colors.grey),)),
+                        SizedBox(height: 40,),
+                        FadeAnimation(1.6, Container(
+                          height: 50,
+                          margin: EdgeInsets.symmetric(horizontal: 50),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                            color: Colors.orange[900]
+                          ),
+                          child: Center(
+                            child: Text("Login", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
+                          ),
+                        )),
+                        SizedBox(height: 50,),
+                        FadeAnimation(1.7, Text("Continue with social media", style: TextStyle(color: Colors.grey),)),
+                        SizedBox(height: 30,),
+                        Row(
+                          children: <Widget>[
+                            Expanded(
+                              child: FadeAnimation(1.8, Container(
+                                height: 50,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(50),
+                                  color: Colors.blue
+                                ),
+                                child: Center(
+                                  child: Text("Facebook", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
+                                ),
+                              )),
+                            ),
+                            SizedBox(width: 30,),
+                            Expanded(
+                              child: FadeAnimation(1.9, Container(
+                                height: 50,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(50),
+                                  color: Colors.black
+                                ),
+                                child: Center(
+                                  child: Text("Github", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
+                                ),
+                              )),
+                            )
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ),
